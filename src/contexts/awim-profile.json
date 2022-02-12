@@ -1,0 +1,32 @@
+{
+  "name": "awim",
+  "age": 33,
+  "address": "Ciganjur, Jakarta Selatan",
+  "emails": [ "mtaqwiem@hotmail.com, taqwim@nalysa.com" ],
+  "experiences": [
+    {
+      "start_year": "01/01/2022",
+      "end_year": null,
+      "roles": "Senior Technical Architect"
+    },
+    {
+      "contract_start": "01/03/2015",
+      "contract_end": "01/01/2022",
+      "roles": "Solution Architect"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "level": "Advanced"
+    },
+    {
+      "name": "Networking",
+      "level": "Advanced"
+    },
+    {
+      "name": "Automation Testing",
+      "level": "Intermediate"
+    }
+  ]
+}

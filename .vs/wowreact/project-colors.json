@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4cd1f3c4-c5ee-4f5b-a046-6fc734c45435": {
+      "ProjectGuid": "4cd1f3c4-c5ee-4f5b-a046-6fc734c45435",
+      "DisplayName": "wowreact",
+      "ColorIndex": 0
+    },
+    "c45136d2-6949-436b-b267-e62913d47e9d": {
+      "ProjectGuid": "c45136d2-6949-436b-b267-e62913d47e9d",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
