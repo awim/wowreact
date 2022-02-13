@@ -1,8 +1,9 @@
 {
   "name": "awim",
-  "age": 33,
+  "phone": "85222406115",
   "address": "Ciganjur, Jakarta Selatan",
   "emails": [ "mtaqwiem@hotmail.com, taqwim@nalysa.com" ],
+  "executive_summary" : "Experienced Software Engineer, System Engineer, Technical Architect, Presales and Subject Matter Expert for IDM, CRM, ERP, and Big Data. Excellent skills in Programming, Computer Science, Linux Administration, and Software Development Project.",
   "experiences": [
     {
       "start_year": "01/01/2022",

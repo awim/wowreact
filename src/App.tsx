@@ -1,13 +1,13 @@
 import './assets/css/App.css';
 import { FC } from 'react';
-import CvModulePage from './pages/CvModulePage';
+import { CvModule } from './modules/CvModule';
 // import { default as awim } from './contexts/awim-profile.json';
 
 
 const App: FC = () => {
   return (
     <div className="App">
-          <CvModulePage />
+          <CvModule />
     </div>          
   );
 }

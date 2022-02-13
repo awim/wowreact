@@ -12,5 +12,6 @@
   },
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "include": ["src/assets/img/images.d.ts"]
 }
