@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import { styled } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
@@ -68,7 +68,7 @@ function UploadButtons(props) {
             </Button>
             </label>
             <label htmlFor="icon-button-file">
-            <HiddenInput accept="image/*" id="icon-button-file" type="file" />
+            <HiddenInput accept="image/*" id="icon-button-file" type="file" onChange={(e) => setSelectedImage(e.target.files[0])} />
             <IconButton color="primary" aria-label="upload picture" component="span">
                 <PhotoCamera />
             </IconButton>
@@ -83,7 +83,7 @@ function UploadButtons(props) {
         <CardMedia
           component="img"
           height="230"
-          image={ picture }
+          image={ props.src }
           alt="green iguana"
         />       
       </Card>
@@ -145,9 +145,18 @@ function ExecutiveSummary(props) {
 }
 
 function CvModule() {
+    const [selectedImage, setSelectedImage] = useState(null);
+    const [imageUrl, setImageUrl] = useState(null);
     const [name, setName] = useState(self.name);
     const [phone, setPhone] = useState(self.phone);
     const [executiveSummary, setExecutiveSummary] = useState(self.executive_summary);
+
+
+    useEffect(() => {
+        if (selectedImage) {
+          setImageUrl(URL.createObjectURL(selectedImage));
+        }
+    }, [selectedImage]);
 
     return (
         <React.Fragment>
@@ -172,7 +181,21 @@ function CvModule() {
                             noValidate
                             autoComplete="off"
                         >
-                            <UploadButtons />
+                                {/* <UploadButtons /> */}
+                            <Stack direction="row" alignItems="center" spacing={2} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+                                <label htmlFor="contained-button-file">
+                                <HiddenInput accept="image/*" id="contained-button-file" multiple type="file" onChange={(e) => setSelectedImage(e.target.files[0])} />
+                                <Button variant="contained" component="span">
+                                    Profile Picture
+                                </Button>
+                                </label>
+                                <label htmlFor="icon-button-file">
+                                <HiddenInput accept="image/*" id="icon-button-file" type="file" onChange={(e) => setSelectedImage(e.target.files[0])} />
+                                <IconButton color="primary" aria-label="upload picture" component="span">
+                                    <PhotoCamera />
+                                </IconButton>
+                                </label>
+                            </Stack>
                             <TextField 
                                 className="outlined-basic"
                                 label="Name"
@@ -233,7 +256,7 @@ function CvModule() {
                                             p: 2
                                         }}
                                     >
-                                        <MediaCard />
+                                    <MediaCard src={ imageUrl ? imageUrl : picture }/>
                                     </Grid>
                                     <Grid
                                         item
