@@ -3,17 +3,19 @@
   "phone": "85222406115",
   "address": "Ciganjur, Jakarta Selatan",
   "emails": [ "mtaqwiem@hotmail.com, taqwim@nalysa.com" ],
-  "executive_summary" : "Experienced Software Engineer, System Engineer, Technical Architect, Presales and Subject Matter Expert for IDM, CRM, ERP, and Big Data. Excellent skills in Programming, Computer Science, Linux Administration, and Software Development Project.",
+  "executive_summary" : "Has been experienced as Software Engineer, System Engineer, Technical Architect, Presales and Subject Matter Expert for IDM, CRM, ERP, and Big Data. Excellent skills in Programming, Computer Science, Linux Administration, and Software Development Project.",
   "experiences": [
     {
       "start_year": "01/01/2022",
       "end_year": null,
-      "roles": "Senior Technical Architect"
+      "roles": "Senior Technical Architect",
+      "company": "Nalysa"
     },
     {
       "contract_start": "01/03/2015",
       "contract_end": "01/01/2022",
-      "roles": "Solution Architect"
+      "roles": "Solution Architect",
+      "company": "Paques Indonesia"
     }
   ],
   "skills": [
@@ -26,7 +28,7 @@
       "level": "Advanced"
     },
     {
-      "name": "Automation Testing",
+      "name": "Testing Automation",
       "level": "Intermediate"
     }
   ]
